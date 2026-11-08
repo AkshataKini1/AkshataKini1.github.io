@@ -213,6 +213,24 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 @media (max-width:520px){.mr{grid-template-columns:1fr;gap:4px}}
 @media (max-width:520px){nav ul li:nth-child(2){display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* layout fixes */
+.vgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vc{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}
+.vc .ptags{align-content:flex-start}
+.vc .vft{margin-top:0;align-items:flex-start;align-content:flex-start}
+.tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tc{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
+.tpl{align-content:flex-start}
+.ugrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.vgrid,.tgrid,.ugrid{grid-template-columns:1fr}}
+.job{grid-template-columns:220px minmax(0,1fr)}
+.job h3{font-size:25px}
+.date{font-size:15px}
+.rlt{font-size:19px}
+.rld{font-size:14px}
+.rl p{font-size:17px;max-width:95ch;line-height:1.7}
+@media (max-width:700px){.job{grid-template-columns:1fr}.job h3{font-size:22px}}
 </style>
 </head>
 <body>
