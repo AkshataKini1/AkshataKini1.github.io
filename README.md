@@ -1,7 +1,7 @@
 # Akshata Kini | Portfolio
 Professional portfolio of Akshata Kini, a Technical Product Manager building data and AI products.
 
-Live site: https://your-username.github.io
+Live site: https://AkshataKini1.github.io
 
 About this site
 
