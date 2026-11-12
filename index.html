@@ -346,8 +346,8 @@ h1{max-width:none}
   <section id="upcoming">
     <div class="wrap">
       <div class="sechead"><h2><span class="num">07</span>Upcoming projects</h2><p>What I’m working on next.</p></div>
-      <div class="ugrid"><div class="uc"><div class="ust"><i class="f"></i>In progress</div><h3>AI product teardown</h3><p>A teardown of an LLM-powered product: who it serves, where it falls short, and what I’d change.</p></div><div class="uc"><div class="ust"><i class="o"></i>Planned</div><h3>PRD for an LLM feature</h3><p>A full PRD, including how to evaluate output quality.</p></div><div class="uc" hidden data-x><div class="ust"><i class="o"></i>Planned</div><h3>AI travel planner</h3><p>An AI-powered travel planning tool.</p></div><div class="uc" hidden data-x><div class="ust"><i class="o"></i>Exploring</div><h3>Analytics automation workflow with an AI agent</h3><p>An agent-driven workflow that turns raw data into a draft analysis, building on my reporting automation work.</p></div></div>
-      <button class="umore" type="button" aria-expanded="false" aria-controls="upcoming">Show 2 more +</button>
+      <div class="ugrid"><div class="uc"><div class="ust"><i class="f"></i>In progress</div><h3>AI product teardown</h3><p>A teardown of an LLM-powered product: who it serves, where it falls short, and what I’d change.</p></div><div class="uc"><div class="ust"><i class="f"></i>In progress</div><h3>Beginner fitness app prototype with an AI coach</h3><p>A prototype of a fitness app for beginners, with an AI coach to guide users.</p></div><div class="uc" hidden data-x><div class="ust"><i class="o"></i>Exploring</div><h3>Analytics automation workflow with an AI agent</h3><p>An agent-driven workflow that turns raw data into a draft analysis, building on my reporting automation work.</p></div></div>
+      <button class="umore" type="button" aria-expanded="false" aria-controls="upcoming">Show 1 more +</button>
     </div>
   </section>
 
@@ -409,7 +409,7 @@ var um=document.querySelector('.umore');
 if(um){um.addEventListener('click',function(){
   var open=um.getAttribute('aria-expanded')==='true';
   document.querySelectorAll('.uc[data-x]').forEach(function(x){x.hidden=open});
-  um.setAttribute('aria-expanded',String(!open));um.textContent=open?'Show 2 more +':'Show less −';
+  um.setAttribute('aria-expanded',String(!open));um.textContent=open?'Show 1 more +':'Show less −';
 });}
 </script>
 </body>
